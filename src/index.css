@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800 font-sans;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 bg-primary-800 text-white font-medium tracking-wide uppercase text-sm hover:bg-primary-900 transition-colors duration-200 border border-primary-800;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-3 bg-white text-primary-800 border border-primary-800 font-medium tracking-wide uppercase text-sm hover:bg-gray-50 transition-colors duration-200;
+  }
+  
+  .section-title {
+    @apply text-3xl font-semibold text-primary-900 tracking-tight mb-2;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-gray-600 font-light;
+  }
+}
+
