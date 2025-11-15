@@ -17,6 +17,16 @@ function Projects() {
       features: ['Machine Learning Models', 'Interactive Dashboard', 'Fighter Statistics', 'Prediction Analysis', 'Model Comparison'],
     },
     {
+      title: 'Surf Forecast App',
+      description: 'A comprehensive web application that aggregates surf forecasts from multiple APIs and ranks California surf spots based on user preferences including skill level, wave height, and wind tolerance.',
+      technologies: ['React', 'Node.js', 'Express.js', 'PostgreSQL', 'Axios'],
+      github: 'https://github.com/tommycomeau3/surf-forecast-app',
+      live: 'https://github.com/tommycomeau3/surf-forecast-app',
+      image: '/images/surf-icon.png',
+      details: 'Built a full-stack application that integrates with Stormglass and OpenWeatherMap APIs to provide real-time surf forecasts. Features a smart ranking algorithm that scores surf spots based on current conditions and user preferences, location-based search with geolocation, and detailed spot information with safety tips.',
+      features: ['Location-Based Search', 'Smart Ranking Algorithm', 'Real-Time Forecasts', 'User Preferences', 'Responsive Design'],
+    },
+    {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard. Built with React, Node.js, and PostgreSQL.',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe API'],
