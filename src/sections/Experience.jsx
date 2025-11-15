@@ -61,7 +61,9 @@ function Experience() {
       <div className="mb-12 md:mb-16 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white tracking-tight">Experience</h2>
         <a
-          href="#"
+          href="/Thomas%20Comeau%20Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center group"
         >
           View Full Résumé

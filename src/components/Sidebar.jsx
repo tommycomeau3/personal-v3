@@ -1,6 +1,4 @@
 function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }) {
-  const currentYear = new Date().getFullYear()
-
   return (
     <>
       {/* Mobile Menu Button */}
@@ -34,7 +32,7 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
       >
         {/* Name and Title */}
         <div className="mb-12 transition-colors duration-200">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3 whitespace-nowrap tracking-tight transition-colors duration-200">Tommy Comeau</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3 whitespace-nowrap tracking-tight transition-colors duration-200">Thomas Comeau</h1>
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-5 font-normal transition-colors duration-200">Software Developer</p>
           <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-xs transition-colors duration-200">
             I build accessible, pixel-perfect digital experiences for the web.
@@ -88,7 +86,7 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/thomas-comeau/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-all duration-200"
@@ -109,11 +107,10 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
             </a>
           </div>
 
-          {/* Current Employment */}
+          {/* Availability Status */}
           <div className="text-xs text-gray-500 dark:text-gray-400 space-y-1">
-            <div>{currentYear} — Present</div>
-            <div className="text-gray-700 dark:text-gray-300 font-medium">Software Developer</div>
-            <div className="text-gray-500 dark:text-gray-400">Company Name</div>
+            <div className="text-gray-700 dark:text-gray-300 font-medium">Available for opportunities</div>
+            <div className="text-gray-500 dark:text-gray-400">Open to work</div>
           </div>
         </div>
       </aside>
