@@ -43,7 +43,7 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
 
         {/* Navigation */}
         <nav className="mb-8">
-          <ul className="space-y-1">
+          <ul className="space-y-0.5">
             {[
               { id: 'about', label: 'About' },
               { id: 'experience', label: 'Experience' },
@@ -52,13 +52,29 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className={`w-full text-left py-2.5 px-3 text-sm font-medium rounded-lg transition-all duration-200 ${
+                  className={`group relative w-full text-left py-2.5 px-3 text-sm font-medium transition-all duration-200 ${
                     activeSection === item.id
-                      ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-700'
-                      : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-700'
+                      ? 'text-gray-900 dark:text-white'
+                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
                   }`}
                 >
-                  {item.label}
+                  {/* Active indicator - sleek line */}
+                  {activeSection === item.id && (
+                    <div className="absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-5 bg-gray-900 dark:bg-white rounded-full"></div>
+                  )}
+                  
+                  {/* Label with subtle hover effect */}
+                  <span className={`relative inline-block transition-all duration-200 ${
+                    activeSection === item.id 
+                      ? 'font-semibold tracking-tight' 
+                      : 'font-normal group-hover:translate-x-1'
+                  }`}>
+                    {item.label}
+                    {/* Subtle underline for active */}
+                    {activeSection === item.id && (
+                      <span className="absolute -bottom-0.5 left-0 right-0 h-px bg-gray-900 dark:bg-white"></span>
+                    )}
+                  </span>
                 </button>
               </li>
             ))}

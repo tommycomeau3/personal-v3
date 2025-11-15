@@ -23,21 +23,21 @@ function About() {
           I'm passionate about building experiences that are built for performance and usability, ensuring 
           that every interaction feels intuitive and seamless.
         </p>
-        
+
         <p>
-          Currently, I'm a Software Developer specializing in full-stack development, where I contribute 
-          to building scalable web applications and maintainable codebases. I work closely with 
+          Currently, I'm a Software Developer specializing in full-stack development, where I contribute
+          to building scalable web applications and maintainable codebases. I work closely with
           cross-functional teams to deliver high-quality software solutions.
         </p>
-        
+
         <p>
-          I've had the privilege of working with a variety of clients and projects, from startups to 
-          large corporations, helping them build digital products that make a difference. I'm always 
+          I've had the privilege of working with a variety of clients and projects, from startups to
+          large corporations, helping them build digital products that make a difference. I'm always
           eager to learn new technologies and share knowledge with the developer community.
         </p>
-        
+
         <p>
-          When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source
           projects, or working on personal projects that challenge me to grow as a developer.
         </p>
       </div>
@@ -46,4 +46,3 @@ function About() {
 }
 
 export default About
-

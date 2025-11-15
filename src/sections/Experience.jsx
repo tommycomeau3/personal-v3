@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 function Experience() {
   const [sectionRef, isSectionVisible] = useScrollAnimation({ threshold: 0.1 })
   const [expRefs, setExpRefs] = useState([])
-  
+
   const experiences = [
     {
       period: '2022 — PRESENT',
@@ -46,15 +46,15 @@ function Experience() {
         observers.push(observer)
       }
     })
-    
+
     return () => {
       observers.forEach(observer => observer.disconnect())
     }
   }, [expRefs])
 
   return (
-    <section 
-      id="experience" 
+    <section
+      id="experience"
       ref={sectionRef}
       className={`min-h-screen px-4 sm:px-6 md:px-8 lg:px-16 py-20 sm:py-24 md:py-32 max-w-4xl mx-auto fade-in-up ${isSectionVisible ? 'visible' : ''}`}
     >
@@ -73,8 +73,8 @@ function Experience() {
 
       <div className="space-y-6">
         {experiences.map((exp, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             ref={expRefs[index]}
             className={`card p-6 md:p-8 fade-in-up stagger-${index + 1}`}
           >
@@ -103,7 +103,7 @@ function Experience() {
                   {exp.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full"
+                      className="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full"
                     >
                       {tech}
                     </span>

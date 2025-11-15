@@ -1,39 +1,32 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useEffect, useState } from 'react';
 
-export function useScrollAnimation(options = {}) {
-  const [isVisible, setIsVisible] = useState(false)
-  const elementRef = useRef(null)
+export const useScrollAnimation = (options) => {
+  const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          // Optionally disconnect after first animation
-          if (options.once !== false) {
-            observer.disconnect()
-          }
-        } else if (options.once === false) {
-          setIsVisible(false)
-        }
-      },
-      {
-        threshold: options.threshold || 0.1,
-        rootMargin: options.rootMargin || '0px 0px -50px 0px',
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        // Optionally disconnect after first intersection if animation should only play once
+        // observer.disconnect();
+      } else {
+        // Optionally reset visibility if animation should replay on scroll up
+        setIsVisible(false);
       }
-    )
+    }, options);
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current)
+    if (ref.current) {
+      observer.observe(ref.current);
     }
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current)
+      if (ref.current) {
+        observer.unobserve(ref.current);
       }
-    }
-  }, [options.threshold, options.rootMargin, options.once])
+    };
+  }, [ref, options]);
 
-  return [elementRef, isVisible]
-}
+  return [ref, isVisible];
+};
 
