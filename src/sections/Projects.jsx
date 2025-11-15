@@ -7,6 +7,16 @@ function Projects() {
   
   const projects = [
     {
+      title: 'UFC Fight Predictor',
+      description: 'A machine learning model to predict the winner of upcoming UFC fights using historical fight data. Features interactive Streamlit dashboards for fighter matchups and predictions analysis.',
+      technologies: ['Python', 'Streamlit', 'Scikit-learn', 'Pandas', 'NumPy'],
+      github: 'https://github.com/tommycomeau3/ufc-prediction',
+      live: 'https://github.com/tommycomeau3/ufc-prediction',
+      image: '/images/ufc-logo.png',
+      details: 'Built a machine learning pipeline using logistic regression and gradient boosting classifiers to predict UFC fight outcomes. Features include interactive fighter selection, real-time predictions, model comparison dashboards, and comprehensive fight analysis with historical statistics.',
+      features: ['Machine Learning Models', 'Interactive Dashboard', 'Fighter Statistics', 'Prediction Analysis', 'Model Comparison'],
+    },
+    {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard. Built with React, Node.js, and PostgreSQL.',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe API'],
@@ -90,8 +100,16 @@ function Projects() {
             <div className="relative z-10">
               {/* Main content - always visible */}
               <div className="flex flex-col sm:flex-row gap-6">
-                <div className="w-full sm:w-32 h-32 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
-                  <div className="text-3xl group-hover:scale-110 transition-transform duration-500">📦</div>
+                <div className="w-full sm:w-32 h-32 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 overflow-hidden">
+                  {project.image ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="text-3xl group-hover:scale-110 transition-transform duration-500">📦</div>
+                  )}
                 </div>
                 <div className="flex-1">
                   <div className="flex items-start justify-between mb-3">
