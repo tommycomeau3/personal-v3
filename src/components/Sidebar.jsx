@@ -35,7 +35,7 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3 whitespace-nowrap tracking-tight transition-colors duration-200">Thomas Comeau</h1>
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-5 font-normal transition-colors duration-200">Software Developer</p>
           <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-xs transition-colors duration-200">
-            I build accessible, pixel-perfect digital experiences for the web.
+            Recent Computer Science graduate from San Diego State University seeking opportunities as a Full Stack Developer.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
         <div className="mt-auto mb-8">
           <div className="flex space-x-3 mb-8">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/tommycomeau3"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-all duration-200"
