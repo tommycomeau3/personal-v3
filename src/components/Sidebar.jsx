@@ -34,7 +34,7 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
       >
         {/* Name and Title */}
         <div className="mb-12 transition-colors duration-200">
-          <h1 className="text-4xl md:text-5xl font-medium text-gray-900 dark:text-white mb-3 whitespace-nowrap tracking-tight transition-colors duration-200">Tommy Comeau</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3 whitespace-nowrap tracking-tight transition-colors duration-200">Tommy Comeau</h1>
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-5 font-normal transition-colors duration-200">Software Developer</p>
           <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-xs transition-colors duration-200">
             I build accessible, pixel-perfect digital experiences for the web.
@@ -52,16 +52,12 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className={`group relative w-full text-left py-2.5 px-3 text-sm font-medium transition-all duration-200 ${
+                  className={`group relative w-full text-left py-2.5 px-3 text-sm font-medium rounded-lg transition-all duration-200 ${
                     activeSection === item.id
-                      ? 'text-gray-900 dark:text-white'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+                      ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800/50'
+                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800/30'
                   }`}
                 >
-                  {/* Active indicator - sleek line */}
-                  {activeSection === item.id && (
-                    <div className="absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-5 bg-gray-900 dark:bg-white rounded-full"></div>
-                  )}
                   
                   {/* Label with subtle hover effect */}
                   <span className={`relative inline-block transition-all duration-200 ${
@@ -70,10 +66,6 @@ function Sidebar({ activeSection, scrollToSection, sidebarOpen, setSidebarOpen }
                       : 'font-normal group-hover:translate-x-1'
                   }`}>
                     {item.label}
-                    {/* Subtle underline for active */}
-                    {activeSection === item.id && (
-                      <span className="absolute -bottom-0.5 left-0 right-0 h-px bg-gray-900 dark:bg-white"></span>
-                    )}
                   </span>
                 </button>
               </li>
