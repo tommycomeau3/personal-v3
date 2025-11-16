@@ -7,7 +7,6 @@ import Projects from './sections/Projects'
 
 function App() {
   const [activeSection, setActiveSection] = useState('about')
-  const [sidebarOpen, setSidebarOpen] = useState(false)
   const scrollingRef = useRef(false)
 
   useEffect(() => {
@@ -71,8 +70,6 @@ function App() {
           <Sidebar 
             activeSection={activeSection} 
             scrollToSection={scrollToSection}
-            sidebarOpen={sidebarOpen}
-            setSidebarOpen={setSidebarOpen}
           />
           <main className="lg:ml-[22rem]">
             <About />
