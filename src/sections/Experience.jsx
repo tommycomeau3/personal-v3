@@ -7,20 +7,20 @@ function Experience() {
 
   const experiences = [
     {
-      period: '2022 — PRESENT',
-      title: 'Software Developer',
-      company: 'Company Name',
-      companyUrl: '#',
-      description: 'Develop and maintain enterprise web applications using modern frameworks. Collaborate with cross-functional teams to deliver high-quality software solutions. Lead code reviews and contribute to architectural decisions.',
-      technologies: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'PostgreSQL'],
+      period: 'May–Aug 2023',
+      title: 'Host',
+      company: 'Eureka Mountain View',
+      companyUrl: 'https://eurekarestaurantgroup.com/',
+      description: 'Efficiently managed reservations, welcomed guests, and ensured smooth seating coordination for an exceptional dining experience.',
+      technologies: [],
     },
     {
-      period: '2020 — 2022',
-      title: 'Junior Developer',
-      company: 'Previous Company',
-      companyUrl: '#',
-      description: 'Built responsive web interfaces and contributed to backend API development. Participated in code reviews and agile development processes. Gained experience in full-stack development and software engineering best practices.',
-      technologies: ['JavaScript', 'React', 'Express', 'MongoDB', 'HTML & CSS'],
+      period: 'May–Aug 2022',
+      title: 'Order Fulfillment Associate',
+      company: 'Home Depot',
+      companyUrl: 'https://www.homedepot.com',
+      description: 'Received and processed incoming stock and materials, picked and filled orders, and assisted with warehouse organization and safety regulations.',
+      technologies: [],
     },
   ]
 
@@ -92,6 +92,8 @@ function Experience() {
                   <span className="hidden sm:inline text-gray-400 dark:text-gray-500">·</span>
                   <a
                     href={exp.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors inline-flex items-center"
                   >
                     {exp.company}
