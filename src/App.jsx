@@ -54,7 +54,6 @@ function App() {
       })
       
       setActiveSection(sectionId)
-      setSidebarOpen(false) // Close mobile sidebar after navigation
       
       // Reset scrolling flag after animation
       setTimeout(() => {
