@@ -19,26 +19,19 @@ function About() {
         className={`space-y-6 text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl fade-in ${isContentVisible ? 'visible' : ''}`}
       >
         <p>
-          I'm a software developer who loves crafting user interfaces that blend design with engineering. 
-          I'm passionate about building experiences that are built for performance and usability, ensuring 
-          that every interaction feels intuitive and seamless.
+          I'm an ambitious full-stack developer with a background that's shaped me into a strong communicator, analytical thinker, and reliable team player. I'm driven by building software that blends thoughtful design with solid engineering, creating fast, intuitive, and user-focused experiences.
         </p>
 
         <p>
-          Currently, I'm a Software Developer specializing in full-stack development, where I contribute
-          to building scalable web applications and maintainable codebases. I work closely with
-          cross-functional teams to deliver high-quality software solutions.
+          Currently, I'm seeking full-time opportunities as a full-stack software engineer while actively building projects that showcase my technical skills, creativity, and ability to deliver production-ready solutions. I'm focused on strengthening my portfolio with scalable, well-architected applications.
         </p>
 
         <p>
-          I've had the privilege of working with a variety of clients and projects, from startups to
-          large corporations, helping them build digital products that make a difference. I'm always
-          eager to learn new technologies and share knowledge with the developer community.
+          Throughout my journey, from my time studying Computer Science at San Diego State University to overcoming cancer, I've learned how to stay resilient, focused, and intentional in everything I build. I've worked on a variety of projects across different industries, and I'm driven by creating digital products that genuinely make an impact. I stay curious, constantly learning new technologies and sharing what I know with other developers.
         </p>
 
         <p>
-          When I'm not coding, you can find me exploring new technologies, contributing to open-source
-          projects, or working on personal projects that challenge me to grow as a developer.
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or working on personal projects that challenge me to grow as a developer.
         </p>
       </div>
     </section>
