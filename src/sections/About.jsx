@@ -4,6 +4,8 @@ function About() {
   const [sectionRef, isSectionVisible] = useScrollAnimation({ threshold: 0.1 })
   const [contentRef, isContentVisible] = useScrollAnimation({ threshold: 0.1 })
 
+  // About section component
+
   return (
     <section 
       id="about" 
@@ -12,6 +14,7 @@ function About() {
     >
       <div className="mb-12 md:mb-16">
         <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 dark:text-white mb-2 tracking-tight">About</h2>
+        {/* Section heading */}
       </div>
       
       <div 
